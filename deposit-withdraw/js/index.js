@@ -13,7 +13,10 @@ function login() {
         window.location.href = 'dashboard.html'
     }
     else{
-        alert('Your Email and Password invalid')
+        alert('Your Email or Password is invalid')
     }
 })
 } login()
+
+
+// deposit 
