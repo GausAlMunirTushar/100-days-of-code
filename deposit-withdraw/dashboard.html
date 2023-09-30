@@ -12,33 +12,34 @@
         <div class="flex justify-center items-center gap-3">
             <div class="w-72 bg-green-500 h-40 flex flex-col items-center justify-center rounded-lg text-black">
                 <span class="text-3xl uppercase">Deposit</span>
-                <span class="text-3xl uppercase">00</span>
+                <span class="text-3xl uppercase" id="deposit">00</span>
             </div>
             <div class="w-72 bg-red-700 h-40 flex flex-col items-center justify-center rounded-lg text-black">
                 <span class="text-3xl uppercase">Withdraw</span>
-                <span class="text-3xl uppercase">00</span>
+                <span class="text-3xl uppercase" id="withdraw">00</span>
             </div>
             <div class="w-72 bg-teal-700 h-40 flex flex-col items-center justify-center rounded-lg text-black">
                 <span class="text-3xl uppercase">Total</span>
-                <span class="text-3xl uppercase">00</span>
+                <span class="text-3xl uppercase" id="total">00</span>
             </div>
         </div>
         <div class="flex gap-5 justify-center items-center my-10">
             <div class="bg-slate-900 text-white w-96 p-5 rounded-xl">
                 <h1 class="my-3">Deposit Amount</h1>
                <div class="mb-5">
-                <input class="py-1 px-2 w-60 text-slate-900" type="text" placeholder="Deposit Amount">
-                <button class="bg-green-500 text-white py-1 px-3">Deposit</button>
+                <input class="py-1 px-2 w-60 text-slate-900" id="deposit-amount" type="number" placeholder="Deposit Amount">
+                <button class="bg-green-500 text-white py-1 px-3" id="deposit-btn">Deposit</button>
                </div>
             </div>
             <div class="bg-slate-900 w-96 p-5 rounded-xl text-white">
                 <h1 class="my-3">Withdraw Amount: </h1>
                <div class="mb-5">
-                <input class="py-1 px-2 w-60 text-slate-900" type="text" placeholder="Withdraw Amount">
-                <button class="bg-red-400 py-1 px-3">Withdraw</button>
+                <input class="py-1 px-2 w-60 text-slate-900" id="withdraw-amount" type="numer" placeholder="Withdraw Amount">
+                <button class="bg-red-400 py-1 px-3" id="withdraw-btn">Withdraw</button>
                </div>
             </div>
         </div>
     </section>
+    <script src="./js/dashboard.js"></script>
 </body>
 </html>
