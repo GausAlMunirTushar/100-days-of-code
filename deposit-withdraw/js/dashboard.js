@@ -43,9 +43,9 @@ function updateValues() {
     let currentWithdraw = parseFloat(withdraw.innerText) || 0;
     let currentTotal = parseFloat(total.innerText) || 0;
 
-    localStorage.setItem('deposit', currentDeposit.toString());
-    localStorage.setItem('withdraw', currentWithdraw.toString());
-    localStorage.setItem('total', currentTotal.toString());
+    localStorage.setItem('deposit', parseInt(currentDeposit.toString()));
+    localStorage.setItem('withdraw', parseInt(currentWithdraw.toString()));
+    localStorage.setItem('total', parseInt(currentTotal.toString()));
 
     depositAmount.value = '';
     withdrawAmount.value = '';
