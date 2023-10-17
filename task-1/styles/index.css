@@ -44,7 +44,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1080px;
+    width: 900px;
     height: 400px;
 }
 .about-left {
