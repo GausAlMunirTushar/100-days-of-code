@@ -11,7 +11,7 @@ body {
 header {
     display: flex;
     bottom: 1px solid red;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin: 10px 0px;
 }
@@ -36,20 +36,23 @@ ul li a {
     color: white;
     border-radius: 5px;
 }
-
+.about {
+    display: flex;
+    justify-content: space-evenly;
+}
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 1080px;
     height: 400px;
 }
 .about-left {
-    margin: 180px;
-    width: 70%;
+    margin: 10px;
+    width: 60%;
 }
 .about-right {
-    width: 30%;
+    width: 40%;
 }
 section h2 {
     font-size: 35px;
@@ -66,4 +69,97 @@ section p {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+}
+
+/* Contact Form */
+.contact {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.contact-form h3 {
+    font-size: 25px;
+}
+.contact-form input, textarea {
+    width: 400px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+}
+input[type="button"] {
+    background: #0D6D8C;
+    font-size: 16px;
+    color: #fff;
+}
+.map-area {
+
+}
+.map {
+    margin-top: 30px;
+    width: 400px;
+    height: 300px;
+}
+
+.container {
+    max-width: 900px;
+    background: #404246;
+    margin: 100px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #f1f1f1;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #333;
+    color: #fff;
+}
+tr:nth-child(even) {
+    background-color: #292727;
+}
+tr:hover {
+    background-color: #817b7b;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+footer p {
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
 }
