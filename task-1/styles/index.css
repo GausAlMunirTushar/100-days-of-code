@@ -8,10 +8,16 @@ body {
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+.header-section {
+    background: #12151a;
+    display: flex;
+    justify-content: center;
+}
 header {
+    width: 900px;
     display: flex;
     bottom: 1px solid red;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin: 10px 0px;
 }
@@ -101,9 +107,9 @@ input[type="button"] {
 
 }
 .map {
-    margin-top: 30px;
+    margin-top: 34px;
     width: 400px;
-    height: 300px;
+    height: 287px;
 }
 
 .container {
@@ -141,7 +147,7 @@ tr:hover {
 
 
 footer {
-    background-color: #333;
+    background: #12151a;
     color: #fff;
     padding: 20px 0;
 }
